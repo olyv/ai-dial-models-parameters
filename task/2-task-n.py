@@ -3,7 +3,7 @@ from task.app.main import run
 # TODO:
 #  Try the `n` parameter with different models (`deployment_name`). With the parameter `n`, we can configure how many
 #       chat completion choices to generate for each input message
-#  User massage: Why is the snow white?
+#  User message: Why is the snow white?
 
 # Models to try:
 # - gpt-4o
@@ -14,6 +14,8 @@ run(
     # TODO:
     #  1. Provide `deployment_name` with model from the list above👆
     #  2. Use `n` parameter with value in range from 1 to 5!
+    deployment_name='gpt-4o',
+    n=1
 )
 
 # Pay attention to the number of choices in the response!
